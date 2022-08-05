@@ -1,4 +1,3 @@
-import { FiArrowLeft } from 'react-icons/fi'
 import { Container } from './style'
 
 export function TextLink({ icon: Icon,title, ...rest }) {

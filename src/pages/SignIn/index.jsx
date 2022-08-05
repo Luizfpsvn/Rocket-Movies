@@ -1,9 +1,10 @@
-import { FiMail, FiLock } from 'react-icons/fi'
+import { FiMail, FiLock, FiUserPlus } from 'react-icons/fi'
 
 import { Container, Form, Background } from './styles'
 
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
+import { TextLink } from '../../components/TextLink'
 
 export function SignIn() {
   return (
@@ -19,7 +20,7 @@ export function SignIn() {
 
         <Button title="Login" />
 
-        <a href="#">Register now</a>
+        <TextLink href="#" icon={FiUserPlus} title="Register Now" />
       </Form>
 
       <Background />
