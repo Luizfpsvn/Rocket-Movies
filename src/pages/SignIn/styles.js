@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import backgroundImage from '../../assets/background.png'
 
 export const Container = styled.div`
   height: 100vh;
@@ -29,11 +30,18 @@ export const Form = styled.form`
 
   > h2 {
     font-size: 2.4rem;
-    margin: 4.8rem 0;
+    margin: 4.2rem 0;
   }
 
   > a {
-    margin-top: 4.2rem;
+    margin-top: 4.8rem;
     color: ${({ theme }) => theme.COLORS.PINK};
   }
+`
+
+export const Background = styled.div`
+  flex: 1;
+
+  background: url(${backgroundImage}) no-repeat center center;
+  background-size: cover;
 `

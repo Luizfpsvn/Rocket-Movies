@@ -1,7 +1,9 @@
-import { FiMail, FiLock } from 'react-icons/fi';
+import { FiMail, FiLock } from 'react-icons/fi'
 
-import { Container, Form } from './styles';
-import { Input } from '../../components/Input';
+import { Container, Form, Background } from './styles'
+
+import { Input } from '../../components/Input'
+import { Button } from '../../components/Button'
 
 export function SignIn() {
   return (
@@ -12,11 +14,15 @@ export function SignIn() {
 
         <h2>Login</h2>
 
-        <Input icon = { FiMail } placeholder = "E-mail"/>
-        <Input icon = { FiLock } placeholder = "Password"/>
+        <Input icon={FiMail} placeholder="E-mail" />
+        <Input icon={FiLock} placeholder="Password" />
+
+        <Button title="Login" />
 
         <a href="#">Register now</a>
       </Form>
+
+      <Background />
     </Container>
   )
 }
