@@ -31,4 +31,9 @@ export const Form = styled.form`
     font-size: 2.4rem;
     margin: 4.8rem 0;
   }
+
+  > a {
+    margin-top: 4.2rem;
+    color: ${({ theme }) => theme.COLORS.PINK};
+  }
 `
