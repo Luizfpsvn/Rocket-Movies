@@ -1,28 +1,30 @@
-import { FiMail, FiLock } from 'react-icons/fi'
+import { FiMail, FiLock, FiUser, FiArrowLeft } from 'react-icons/fi'
 
 import { Container, Form, Background } from './styles'
 
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
+import { TextLink } from '../../components/TextLink'
 
-export function SignIn() {
+export function SignUp() {
   return (
     <Container>
+      <Background />
+
       <Form>
         <h1>RocketMovies</h1>
         <p>Application made to track everything you want to watch</p>
 
-        <h2>Login</h2>
+        <h2>Create your account</h2>
 
+        <Input type="text" icon={FiUser} placeholder="Name" />
         <Input type="text" icon={FiMail} placeholder="E-mail" />
         <Input type="password" icon={FiLock} placeholder="Password" />
 
         <Button title="Login" />
 
-        <a href="#">Register now</a>
+        <TextLink href="#" icon={FiArrowLeft} title="Return to Login"/>
       </Form>
-
-      <Background />
     </Container>
   )
 }
