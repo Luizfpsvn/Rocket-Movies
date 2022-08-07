@@ -47,7 +47,7 @@ export const Profile = styled.div`
   > img {
     width: 6.4rem;
     height: 6.4rem;
-    border: 1px solid #3e3b47;
+    border: 2px solid #3e3b47;
     border-radius: 50%;
   }
 `
