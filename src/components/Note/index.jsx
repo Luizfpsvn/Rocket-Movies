@@ -8,15 +8,13 @@ export function Note({ data, ...rest }) {
 
       <p>{data.text}</p>
 
-      {
-        data.tags &&
+      {data.tags && (
         <footer>
-          {
-            data.tags.map(tag => <Tag key={tag.id} title={tag.name}/> )
-          }
+          {data.tags.map(tag => (
+            <Tag key={tag.id} title={tag.name} />
+          ))}
         </footer>
-      }
-
+      )}
     </Container>
   )
 }
