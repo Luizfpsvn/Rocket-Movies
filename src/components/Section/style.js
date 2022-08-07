@@ -10,5 +10,6 @@ export const Container = styled.section`
 
     padding-bottom: 1.6rem;
     margin-bottom: 2.8rem;
+    text-align: left;
   }
 `

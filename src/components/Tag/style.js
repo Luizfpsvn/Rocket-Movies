@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.span`
   font-size: 1.2rem;
-  color: ${({ theme }) => theme.COLORS.WHITE_200};
+  color: ${({ theme }) => theme.COLORS.WHITE};
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
 
   padding: 0.5rem 1.6rem;
