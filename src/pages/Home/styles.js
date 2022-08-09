@@ -23,7 +23,7 @@ export const Container = styled.div`
     width: 100%;
     height: 100vh;
     padding: 0 12.4rem;
-    padding-bottom: 5.8rem;
+    padding-bottom: 25rem;
 
   }
 `

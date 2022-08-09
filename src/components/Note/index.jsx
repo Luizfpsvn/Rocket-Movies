@@ -1,12 +1,15 @@
-import { Container } from './style'
-import { Tag } from '../Tag'
+import { Container } from './style';
+import { Tag } from '../Tag';
+import { Rate } from '../Rate';
 
 export function Note({ data, ...rest }) {
   return (
     <Container>
       <h1>{data.title}</h1>
 
-      <p>{data.text}</p>
+      <Rate />
+
+      <p>{data.description}</p>
 
       {data.tags && (
         <footer>
@@ -16,5 +19,5 @@ export function Note({ data, ...rest }) {
         </footer>
       )}
     </Container>
-  )
+  );
 }
