@@ -16,7 +16,7 @@ export function Rate() {
               type="radio"
               value={givenRating}
               onClick={() => setRate(givenRating)}
-              />
+            />
             <Rating>
               <FaStar
                 onDoubleClick={() => setRate(null)}

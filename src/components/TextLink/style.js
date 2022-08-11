@@ -1,12 +1,11 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
 
-  margin-top: 4.8rem;
+  margin: 4.8rem 0 2.4rem;
 
   > a {
     color: ${({ theme }) => theme.COLORS.PINK};
@@ -18,4 +17,4 @@ export const Container = styled.div`
       margin-right: 0.8rem;
     }
   }
-`
+`;
