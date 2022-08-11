@@ -6,6 +6,7 @@ import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
 import { Section } from '../../components/Section';
 import { TextLink } from '../../components/TextLink';
+import { TextArea } from '../../components/TextArea';
 
 export function CreateMovie() {
   return (
@@ -20,6 +21,8 @@ export function CreateMovie() {
         <Input type="text" placeholder="Title" />
         <Input type="number" placeholder="Rate (from 0 to 5)" />
       </div>
+
+      <TextArea placeholder="Observations"/>
     </Container>
   );
 }
