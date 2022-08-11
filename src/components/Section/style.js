@@ -9,7 +9,7 @@ export const Container = styled.section`
     color: ${({ theme }) => theme.COLORS.WHITE};
 
     padding-bottom: 1.6rem;
-    margin-bottom: 2.8rem;
+    margin-bottom: 1rem;
     text-align: left;
   }
 `;

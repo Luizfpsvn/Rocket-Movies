@@ -26,12 +26,18 @@ export function CreateMovie() {
 
         <TextArea placeholder="Observations" />
 
-        <Section title="marker" />
-          <div className="notes">
-            <NoteItem value="React" />
-            <NoteItem isNew placeholder="New Marker" />
-          </div>
+        <Section title="Markers" />
+        <div className="notes">
+          <NoteItem value="React" />
+          <NoteItem isNew placeholder="New Marker" />
+        </div>
       </main>
+
+      <footer>
+        <Button title="Exclude Movie" />
+        <Button title="Save Changes" />
+      </footer>
+      
     </Container>
   );
 }
