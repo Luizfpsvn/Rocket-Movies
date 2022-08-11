@@ -7,22 +7,31 @@ import { Header } from '../../components/Header';
 import { Section } from '../../components/Section';
 import { TextLink } from '../../components/TextLink';
 import { TextArea } from '../../components/TextArea';
+import { NoteItem } from '../../components/NoteItem';
 
 export function CreateMovie() {
   return (
     <Container>
       <Header />
 
-      <TextLink icon={FiArrowLeft} title="Back" />
+      <main>
+        <TextLink icon={FiArrowLeft} title="Back" />
 
-      <Section title="New Movie" />
+        <Section title="New Movie" />
 
-      <div className="inputs">
-        <Input type="text" placeholder="Title" />
-        <Input type="number" placeholder="Rate (from 0 to 5)" />
-      </div>
+        <div className="inputs">
+          <Input type="text" placeholder="Title" />
+          <Input type="number" placeholder="Rate (from 0 to 5)" />
+        </div>
 
-      <TextArea placeholder="Observations"/>
+        <TextArea placeholder="Observations" />
+
+        <Section title="marker" />
+          <div className="notes">
+            <NoteItem value="React" />
+            <NoteItem isNew placeholder="New Marker" />
+          </div>
+      </main>
     </Container>
   );
 }

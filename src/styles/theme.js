@@ -6,6 +6,7 @@ export default {
     WHITE_200: '#E5E5E5',
     PINK: '#FF859B',
     PINK_BACKGROUND: '#FF859B0D',
-    GRAY_100: '#948F99'
+    GRAY_100: '#948F99',
+    BLACK: '#000000'
   }
-}
+};

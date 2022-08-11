@@ -13,7 +13,7 @@ export const Container = styled.textarea`
 
   padding: 1.9rem 1.6rem;
 
-  margin: 4rem 0;
+  margin: 2rem 0;
 
   &::placeholder {
     color: ${({ theme }) => theme.COLORS.GRAY};
