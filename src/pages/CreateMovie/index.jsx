@@ -1,4 +1,7 @@
 import { FiArrowLeft } from 'react-icons/fi';
+
+import { Link } from 'react-router-dom';
+
 import { Container } from './styles';
 
 import { Input } from '../../components/Input';
@@ -15,7 +18,9 @@ export function CreateMovie() {
       <Header />
 
       <main>
-        <TextLink icon={FiArrowLeft} title="Back" />
+        <Link to="/">
+          <FiArrowLeft /> Back
+        </Link>
 
         <Section title="New Movie" />
 

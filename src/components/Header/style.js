@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.header`
   grid-area: header;
@@ -15,12 +15,15 @@ export const Container = styled.header`
 
   padding: 0 8rem;
 
-  > h1 {
-    font-weight: 700;
-    font-size: 2.4rem;
+  > a {
     color: ${({ theme }) => theme.COLORS.PINK};
+
+    h1 {
+      font-weight: 700;
+      font-size: 2.4rem;
+    }
   }
-`
+`;
 export const Profile = styled.div`
   display: flex;
   align-items: center;
@@ -31,16 +34,20 @@ export const Profile = styled.div`
     flex-direction: column;
     align-items: flex-end;
 
-    > strong {
-      font-weight: 700;
-      font-size: 1.4rem;
-      color: ${({ theme }) => theme.COLORS.WHITE};
+    a {
+      color: ${({ theme }) => theme.COLORS.PINK};
       white-space: nowrap;
-    }
 
-    > span {
-      font-size: 1.4rem;
-      color: ${({ theme }) => theme.COLORS.GRAY_100};
+      strong {
+        font-weight: 700;
+        font-size: 1.4rem;
+        color: ${({ theme }) => theme.COLORS.WHITE};
+      }
+
+      span {
+        font-size: 1.4rem;
+        color: ${({ theme }) => theme.COLORS.GRAY_100};
+      }
     }
   }
 
@@ -50,4 +57,4 @@ export const Profile = styled.div`
     border: 2px solid #3e3b47;
     border-radius: 50%;
   }
-`
+`;

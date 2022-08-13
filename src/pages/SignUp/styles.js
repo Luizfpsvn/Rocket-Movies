@@ -1,12 +1,12 @@
-import styled from 'styled-components'
-import backgroundImage from '../../assets/background.png'
+import styled from 'styled-components';
+import backgroundImage from '../../assets/background.png';
 
 export const Container = styled.div`
   height: 100vh;
 
   display: flex;
   align-items: stretch;
-`
+`;
 
 export const Form = styled.form`
   padding: 0 13.6rem;
@@ -32,11 +32,24 @@ export const Form = styled.form`
     font-size: 2.4rem;
     margin: 4.8rem 0;
   }
-`
+
+  > a {
+    margin: 4.8rem auto 2.4rem;
+    color: ${({ theme }) => theme.COLORS.PINK};
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      margin-right: 0.8rem;
+    }
+  }
+`;
 
 export const Background = styled.div`
   flex: 1;
 
   background: url(${backgroundImage}) no-repeat center center;
   background-size: cover;
-`
+`;

@@ -9,6 +9,19 @@ export const Container = styled.div`
     overflow-y: auto;
     padding: 0 12.3rem;
 
+    > a {
+    margin: 4.8rem auto 2.4rem;
+    color: ${({ theme }) => theme.COLORS.PINK};
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    svg {
+      margin-right: 0.8rem;
+    }
+  }
+
     > .inputs {
       display: flex;
       gap: 4rem;

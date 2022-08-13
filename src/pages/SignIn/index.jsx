@@ -1,10 +1,11 @@
-import { FiMail, FiLock, FiUserPlus } from 'react-icons/fi'
+import { FiMail, FiLock, FiUserPlus } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
-import { Container, Form, Background } from './styles'
+import { Container, Form, Background } from './styles';
 
-import { Input } from '../../components/Input'
-import { Button } from '../../components/Button'
-import { TextLink } from '../../components/TextLink'
+import { Input } from '../../components/Input';
+import { Button } from '../../components/Button';
+import { TextLink } from '../../components/TextLink';
 
 export function SignIn() {
   return (
@@ -20,10 +21,12 @@ export function SignIn() {
 
         <Button title="Login" />
 
-        <TextLink href="#" icon={FiUserPlus} title="Register Now" />
+        <Link to="/register">
+          <FiUserPlus /> Register
+        </Link>
       </Form>
 
       <Background />
     </Container>
-  )
+  );
 }
