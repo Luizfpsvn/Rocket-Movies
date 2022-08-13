@@ -1,17 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-import { ThemeProvider } from 'styled-components'
-import theme from './Styles/theme'
-import GlobalStyle from './styles/global'
+import { ThemeProvider } from 'styled-components';
+import theme from './Styles/theme';
+import GlobalStyle from './styles/global';
 
-import { Profile } from './pages/Profile'
+import { MoviePreview } from './pages/MoviePreview';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Profile />
+      <MoviePreview />
     </ThemeProvider>
   </React.StrictMode>
-)
+);
