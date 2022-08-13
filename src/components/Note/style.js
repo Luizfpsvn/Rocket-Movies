@@ -5,7 +5,8 @@ export const Container = styled.button`
   padding: 3.2rem;
   margin-bottom: 2.4rem;
 
-  background: #ff859b0d;
+  background: ${({ theme }) => theme.COLORS.PINK_BACKGROUND};
+
   border: none;
   border-radius: 1.6rem;
   text-align: left;
