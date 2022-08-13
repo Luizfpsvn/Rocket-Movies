@@ -2,13 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  overflow-y: hidden;
 `;
 
 export const Content = styled.div`
   width: 100%;
-  overflow-y: auto;
-
   padding: 0 12.3rem;
   margin: 2rem auto;
 

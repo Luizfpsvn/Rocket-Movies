@@ -37,7 +37,6 @@ export function CreateMovie() {
         <Button title="Exclude Movie" />
         <Button title="Save Changes" />
       </footer>
-      
     </Container>
   );
 }

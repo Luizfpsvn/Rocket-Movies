@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 :root {
@@ -35,4 +35,13 @@ button, a {
 button:hover, a:hover {
   filter: brightness(0.8);
 }
-`
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: ${({ theme }) => theme.COLORS.PINK};
+}
+`;
