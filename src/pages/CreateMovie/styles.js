@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
@@ -10,17 +10,17 @@ export const Container = styled.div`
     padding: 0 12.3rem;
 
     > a {
-    margin: 4.8rem auto 2.4rem;
-    color: ${({ theme }) => theme.COLORS.PINK};
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+      margin: 4.8rem auto 2.4rem;
+      color: ${({ theme }) => theme.COLORS.PINK};
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
 
-    svg {
-      margin-right: 0.8rem;
+      svg {
+        margin-right: 0.8rem;
+      }
     }
-  }
 
     > .inputs {
       display: flex;
@@ -51,7 +51,7 @@ export const Container = styled.div`
     padding: 2rem 12.3rem;
 
     > button:first-child {
-      color: ${({theme}) => theme.COLORS.PINK};
+      color: ${({ theme }) => theme.COLORS.PINK};
       background-color: #0d0c0f;
     }
   }

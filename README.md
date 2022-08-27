@@ -21,11 +21,10 @@
 </p>
 
 ## About
+
 This is a app was developed so you can save your favorite movies, and rate it from 0 to 5 stars, make changes to your profile and have a good interface in front-end, it was in great part made using REACT and it's features!
 
-
 You can run a NPM INSTALL or a YARN ADD, so it can download the node_modules directory, and after that run a npm run dev or yarn dev to it run the server and you can use the interface and test it.
-
 
 ##Images
 
@@ -36,8 +35,8 @@ You can run a NPM INSTALL or a YARN ADD, so it can download the node_modules dir
 ![Web capture_15-8-2022_14133_127 0 0 1](https://user-images.githubusercontent.com/99773088/184578387-a7890d26-31cd-4fd6-bc15-9103e47a20ac.jpeg)
 ![Web capture_15-8-2022_1415_127 0 0 1](https://user-images.githubusercontent.com/99773088/184578390-32a5c8aa-e4a3-4422-8ddb-aa61b174ca00.jpeg)
 
-
 ## Tech Stack
+
 <img src="https://img.shields.io/badge/Css3-05122A?style=flat&logo=css3" alt="css3 Badge" height="25">&nbsp;
 <img src="https://img.shields.io/badge/Git-05122A?style=flat&logo=git" alt="git Badge" height="25">&nbsp;
 <img src="https://img.shields.io/badge/Html5-05122A?style=flat&logo=html5" alt="html5 Badge" height="25">&nbsp;
@@ -45,6 +44,7 @@ You can run a NPM INSTALL or a YARN ADD, so it can download the node_modules dir
 <img src="https://img.shields.io/badge/React-05122A?style=flat&logo=react" alt="react Badge" height="25">&nbsp;
 
 ## Contact
+
 <img align="left" src="https://avatars.githubusercontent.com/Luizfpsvn?size=100">
 
 Made with ❤️ by [Luiz Fernando Nascimento](https://github.com/Luizfpsvn), get in touch!

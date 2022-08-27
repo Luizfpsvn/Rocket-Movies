@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
@@ -22,6 +22,5 @@ export const Container = styled.div`
     height: 100vh;
     padding: 0 12.4rem;
     padding-bottom: 25rem;
-
   }
-`
+`;

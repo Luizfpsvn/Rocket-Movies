@@ -1,12 +1,12 @@
-import { FiArrowLeft, FiClock } from 'react-icons/fi';
+import { FiArrowLeft, FiClock } from "react-icons/fi";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import { Container, Content } from './style';
+import { Container, Content } from "./style";
 
-import { Header } from '../../components/Header';
-import { Tag } from '../../components/Tag';
-import { Rate } from '../../components/Rate';
+import { Header } from "../../components/Header";
+import { Tag } from "../../components/Tag";
+import { Rate } from "../../components/Rate";
 
 export function MoviePreview() {
   return (
@@ -25,7 +25,7 @@ export function MoviePreview() {
 
         <p>
           <img src="https://github.com/Luizfpsvn.png" alt="User Image" />
-          <span>Por Luiz Fernando</span> <FiClock />{' '}
+          <span>Por Luiz Fernando</span> <FiClock />{" "}
           <span>13/08/2022 as 02:25</span>
         </p>
 

@@ -1,6 +1,6 @@
-import { FiPlus, FiX } from 'react-icons/fi';
+import { FiPlus, FiX } from "react-icons/fi";
 
-import { Container } from './style';
+import { Container } from "./style";
 
 export function NoteItem({ isNew, value, onClick, ...rest }) {
   return (

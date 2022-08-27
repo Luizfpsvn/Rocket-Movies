@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { FaStar } from 'react-icons/fa';
-import { Container, Radio, Rating } from './style';
+import React, { useState } from "react";
+import { FaStar } from "react-icons/fa";
+import { Container, Radio, Rating } from "./style";
 
 export function Rate() {
   const [rate, setRate] = useState(null);
@@ -22,7 +22,7 @@ export function Rate() {
                 onDoubleClick={() => setRate(null)}
                 onMouseEnter={() => setHover(givenRating)}
                 onMouseLeave={() => setHover(null)}
-                color={givenRating <= (hover || rate) ? '#FF859B' : '#948F99'}
+                color={givenRating <= (hover || rate) ? "#FF859B" : "#948F99"}
               />
             </Rating>
           </label>

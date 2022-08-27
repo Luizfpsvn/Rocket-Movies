@@ -1,11 +1,11 @@
-import { Container } from './style'
+import { Container } from "./style";
 
-export function TextLink({ icon: Icon,title, ...rest }) {
+export function TextLink({ icon: Icon, title, ...rest }) {
   return (
     <Container>
       <a {...rest}>
-      {Icon && <Icon size={20} />} { title }
+        {Icon && <Icon size={20} />} {title}
       </a>
     </Container>
-  )
+  );
 }

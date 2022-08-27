@@ -1,9 +1,9 @@
-import { FiSearch } from 'react-icons/fi';
+import { FiSearch } from "react-icons/fi";
 
-import { Container, Profile } from './style';
+import { Container, Profile } from "./style";
 
-import { Input } from '../Input';
-import { Link } from 'react-router-dom';
+import { Input } from "../Input";
+import { Link } from "react-router-dom";
 
 export function Header() {
   return (

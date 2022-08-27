@@ -1,11 +1,11 @@
-import { FiUser, FiMail, FiLock, FiArrowLeft, FiCamera } from 'react-icons/fi';
+import { FiUser, FiMail, FiLock, FiArrowLeft, FiCamera } from "react-icons/fi";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import { Container, Form, Avatar } from './styles';
+import { Container, Form, Avatar } from "./styles";
 
-import { Input } from '../../components/Input';
-import { Button } from '../../components/Button';
+import { Input } from "../../components/Input";
+import { Button } from "../../components/Button";
 
 export function Profile() {
   return (

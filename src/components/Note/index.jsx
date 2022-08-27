@@ -1,6 +1,6 @@
-import { Container } from './style';
-import { Tag } from '../Tag';
-import { Rate } from '../Rate';
+import { Container } from "./style";
+import { Tag } from "../Tag";
+import { Rate } from "../Rate";
 
 export function Note({ data, ...rest }) {
   return (

@@ -1,16 +1,16 @@
-import { FiArrowLeft } from 'react-icons/fi';
+import { FiArrowLeft } from "react-icons/fi";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import { Container } from './styles';
+import { Container } from "./styles";
 
-import { Input } from '../../components/Input';
-import { Button } from '../../components/Button';
-import { Header } from '../../components/Header';
-import { Section } from '../../components/Section';
-import { TextLink } from '../../components/TextLink';
-import { TextArea } from '../../components/TextArea';
-import { NoteItem } from '../../components/NoteItem';
+import { Input } from "../../components/Input";
+import { Button } from "../../components/Button";
+import { Header } from "../../components/Header";
+import { Section } from "../../components/Section";
+import { TextLink } from "../../components/TextLink";
+import { TextArea } from "../../components/TextArea";
+import { NoteItem } from "../../components/NoteItem";
 
 export function CreateMovie() {
   return (
