@@ -1,5 +1,10 @@
 import { FiMail, FiLock, FiUserPlus } from "react-icons/fi";
+
 import { Link } from "react-router-dom";
+
+import { useContext } from "react";
+
+import { myContext } from "../../myContext";
 
 import { Container, Form, Background } from "./styles";
 
@@ -8,6 +13,9 @@ import { Button } from "../../components/Button";
 import { TextLink } from "../../components/TextLink";
 
 export function SignIn() {
+  const data = useContext(myContext);
+  console.log(data);
+
   return (
     <Container>
       <Form>
