@@ -4,14 +4,22 @@ import { Link } from "react-router-dom";
 
 import { useAuth } from "../../hooks/auth";
 
+import { useState } from "react";
+
 import { Container, Form, Background } from "./styles";
 
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 
 export function SignIn() {
-  const data = useAuth();
-  console.log(data);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const { signIn } = useAuth();
+
+  function handleSignIn() {
+    signIn({ email, password });
+  }
 
   return (
     <Container>
@@ -21,10 +29,20 @@ export function SignIn() {
 
         <h2>Login</h2>
 
-        <Input type="text" icon={FiMail} placeholder="E-mail" />
-        <Input type="password" icon={FiLock} placeholder="Password" />
+        <Input
+          type="text"
+          icon={FiMail}
+          placeholder="E-mail"
+          onChange={event => setEmail(event.target.value)}
+        />
+        <Input
+          type="password"
+          icon={FiLock}
+          placeholder="Password"
+          onChange={event => setPassword(event.target.value)}
+        />
 
-        <Button title="Login" />
+        <Button title="Login" onClick={handleSignIn} />
 
         <Link to="/register">
           <FiUserPlus /> Register

@@ -20,7 +20,7 @@ export function SignUp() {
 
   function handleSignUp() {
     if (!name || !email || !password) {
-      alert("You need to fill all the fields to complete your register!");
+     return alert("You need to fill all the fields to complete your register!");
     }
 
     api
