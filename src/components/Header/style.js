@@ -33,6 +33,7 @@ export const Profile = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    gap: 0.9rem;
 
     a {
       color: ${({ theme }) => theme.COLORS.PINK};
@@ -40,14 +41,17 @@ export const Profile = styled.div`
 
       strong {
         font-weight: 700;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         color: ${({ theme }) => theme.COLORS.WHITE};
       }
+    }
 
-      span {
-        font-size: 1.4rem;
-        color: ${({ theme }) => theme.COLORS.GRAY_100};
-      }
+    button {
+      border: none;
+      background: none;
+
+      font-size: 1.6rem;
+      color: ${({ theme }) => theme.COLORS.GRAY_100};
     }
   }
 

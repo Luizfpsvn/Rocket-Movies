@@ -1,11 +1,16 @@
+import { Link } from "react-router-dom";
+
+import { useAuth } from "../../hooks/auth";
+
 import { FiSearch } from "react-icons/fi";
 
 import { Container, Profile } from "./style";
 
 import { Input } from "../Input";
-import { Link } from "react-router-dom";
 
 export function Header() {
+  const { signOut } = useAuth();
+
   return (
     <Container>
       <Link to="/">
@@ -20,9 +25,7 @@ export function Header() {
             <strong>Luiz Fernando</strong>
           </Link>
 
-          <Link to="/">
-            <span>Exit</span>
-          </Link>
+          <button onClick={signOut} >Exit</button>
         </div>
 
         <img src="https://github.com/Luizfpsvn.png" alt="User Image" />
