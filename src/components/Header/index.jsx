@@ -20,7 +20,7 @@ export function Header() {
             <strong>Luiz Fernando</strong>
           </Link>
 
-          <Link to="/login">
+          <Link to="/">
             <span>Exit</span>
           </Link>
         </div>

@@ -7,7 +7,7 @@ export function Rate() {
   const [hover, setHover] = useState(null);
 
   return (
-    <Container>
+    <Container >
       {[...Array(5)].map((item, index) => {
         const givenRating = index + 1;
         return (
