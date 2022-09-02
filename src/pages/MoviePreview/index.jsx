@@ -7,6 +7,7 @@ import { Container, Content } from "./style";
 import { Header } from "../../components/Header";
 import { Tag } from "../../components/Tag";
 import { Rate } from "../../components/Rate";
+import { Button } from "../../components/Button";
 
 export function MoviePreview() {
   return (
@@ -100,6 +101,10 @@ export function MoviePreview() {
           partida. Ao voltarem para a Endurance, Cooper e Amelia descobrem que
           23 anos se passaram.
         </p>
+
+        <footer>
+          <Button title="Exclude movie" />
+        </footer>
       </Content>
     </Container>
   );

@@ -50,4 +50,18 @@ export const Content = styled.div`
     margin-top: 2rem;
     font-size: 1.4rem;
   }
+
+  > footer {
+    width: 100%;
+
+    display: flex;
+    gap: 4rem;
+
+    padding: 2rem 12.3rem;
+
+    > button:first-child {
+      color: ${({ theme }) => theme.COLORS.PINK};
+      background-color: #0d0c0f;
+    }
+  }
 `;

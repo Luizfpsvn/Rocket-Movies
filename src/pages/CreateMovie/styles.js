@@ -50,9 +50,9 @@ export const Container = styled.div`
 
     padding: 2rem 12.3rem;
 
-    > button:first-child {
+    /* > button:first-child {
       color: ${({ theme }) => theme.COLORS.PINK};
       background-color: #0d0c0f;
-    }
+    } */
   }
 `;

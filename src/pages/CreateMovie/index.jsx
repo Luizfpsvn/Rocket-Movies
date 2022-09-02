@@ -39,7 +39,7 @@ export function CreateMovie() {
       </main>
 
       <footer>
-        <Button title="Exclude Movie" />
+        {/* <Button title="Exclude Movie" /> */}
         <Button title="Save Changes" />
       </footer>
     </Container>
