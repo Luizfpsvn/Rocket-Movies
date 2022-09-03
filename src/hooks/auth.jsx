@@ -33,6 +33,25 @@ function AuthProvider({ children }) {
     setData({});
   }
 
+  async function updateProfile({ user }) {
+    try {
+      await api.put("/users", user);
+      localStorage.setItem("@rocketmovies:user", JSON.stringify(user));
+
+      setData({
+        user,
+        token: data.token
+      });
+      alert("Profile was updated!");
+    } catch (error) {
+      if (error.response) {
+        alert(error.response.data.message);
+      } else {
+        alert("Error, it wasn't possible to update the profile.");
+      }
+    }
+  }
+
   useEffect(() => {
     const user = localStorage.getItem("@rocketmovies:user");
     const token = localStorage.getItem("@rocketmovies:token");
@@ -52,6 +71,7 @@ function AuthProvider({ children }) {
       value={{
         signIn,
         signOut,
+        updateProfile,
         user: data.user
       }}
     >
