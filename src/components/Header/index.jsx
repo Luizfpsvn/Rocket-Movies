@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import { api } from "../../services/api";
+
 import { useAuth } from "../../hooks/auth";
 
 import { FiSearch } from "react-icons/fi";
@@ -9,7 +11,11 @@ import { Container, Profile } from "./style";
 import { Input } from "../Input";
 
 export function Header() {
-  const { signOut } = useAuth();
+  const { signOut, user } = useAuth();
+
+  const avatarUrl = user.avatar
+    ? `${api.defaults.baseURL}/files/${user.avatar}`
+    : avatarPlaceholder;
 
   return (
     <Container>
@@ -22,13 +28,13 @@ export function Header() {
       <Profile>
         <div>
           <Link to="/profile">
-            <strong>Luiz Fernando</strong>
+            <strong>{user.name}</strong>
           </Link>
 
-          <button onClick={signOut} >Exit</button>
+          <button onClick={signOut}>Exit</button>
         </div>
 
-        <img src="https://github.com/Luizfpsvn.png" alt="User Image" />
+        <img src={avatarUrl} alt={`user image of ${user.name}`} />
       </Profile>
     </Container>
   );
