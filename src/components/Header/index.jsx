@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 
 import { api } from "../../services/api";
 
+import avatarPlaceholder from "../../assets/avatar_placeholder.svg";
+
 import { useAuth } from "../../hooks/auth";
 
 import { FiSearch } from "react-icons/fi";

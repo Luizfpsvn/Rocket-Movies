@@ -33,7 +33,7 @@ export const Content = styled.div`
     align-items: center;
     justify-content: flex-start;
     gap: 0.8rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 
     img {
       width: 1.6rem;
